@@ -12,13 +12,13 @@
 
 <br/>
 
-어제 퇴근 길 연속 세 대의 버스가 사람이 꽉차서 그냥 지나가 버렸다 ㅜㅜ
+어제 퇴근 길 **연속** 세 대의 🚌가 사람이 꽉차서 그냥 지나가 버렸다 ㅜㅜ
 
 어제의 분노를 담아 타입 캐스팅 예제에 담아 봤당..ㅎㅎ 😉
 
 <br/>
 
-### ✅ Type Checking
+### ✅  Type Checking
 
 ```swift
 class PublicTransportation {
@@ -85,4 +85,39 @@ for i in vehicle {
 print("\(busCount) Bus, \(subwayCount) Subway") //3 Bus, 2 Subway
 
 ```
+
+<br/>
+
+<br/>
+
+### ⬇️  Downcasting
+
+다운캐스팅은 실패 할 가능성 있으므로 optional ❔ 타입을 반환한다.
+
+강제 언래핑은❗️잘못된 타입으로 다운캐스팅 시도시 **런타임에러**가 발생합니둥 
+
+<br/>
+
+ ```swift
+for i in vehicle {
+    if let bus = i as? Bus {
+        if bus.isFull {
+            bus.passingByBus()
+        } else {
+            print("\(bus.number) number, \(bus.station) station, it takes \(bus.time) hours")
+        }
+    } else if let subway = i as? Subway, let transferNumber = subway.transferLineNumber {
+        print("\(subway.number)line, \(subway.station) station, transferLineNumber  \(transferNumber) " )
+    }
+}
+ ```
+
+```
+1111number, 강남 station, it takes 1 hours
+...🤬 
+2호선line, 잠실 station, transferLineNumber  8호선 
+...🤬 
+```
+
+
 
