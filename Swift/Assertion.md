@@ -1,4 +1,4 @@
-## assert
+## Assertion
 
 Assertion은 디버깅할 때 사용하면 유용하다.
 
