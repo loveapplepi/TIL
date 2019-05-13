@@ -261,15 +261,105 @@ Developerment에서
 
 <br/>
 
+<br/>
+
+[Firebase](https://console.firebase.google.com/?hl=ko) 로 이동해서 새 프로젝트를 추가한다.
+
+<br/>
+
+<br/>
+
+![img1](images/img24.png)
+
+<br/>
+
+<br/>
+
+![img1](images/img25.png)
+
+<br/>
+
+프로젝트 이름 작성하고 `프로젝트 만들기`
+
+<br/><br/>
+
+![img1](images/img26.png)
+
+<br/>
+
+`계속`
+
+<br/>
+
+<br/>
+
+![img1](images/img27.png)
+
+<br/>
+
+우리는 iOS 프로젝트이므로 iOS를 클릭해서 앱 추가한다.
+
+<br/>
+
+<br/>
+
+![img1](images/img28.png)
+
+<br/>
+
+iOS 번들 ID에 초반에 만든 NotiDemo Xcode 프로젝트 Bundle Identifier를 적어준다.
+
+<br/>
+
+![img1](images/img6.png)
+
+<br/>
+
+<br/>
+
+![img1](images/img29.png)
+
+<br/>
+
+가이드에 따라 GoogleService-Info.plist를 다운받고,
+
+Xcode 프로젝트에 추가한다.
+
+<br/>
+
+<br/>
+
+코코아팟이 설치 되어있지 않으면 아래 명령어로 설치해주고
+
+<br/>
+
+```
+$ sudo gem install cocoapods
+```
+
+<br/><br/>
+
+![img1](images/img30.png)
+
+<br/>
+
+<br/>
+
+해당 프로젝트로 이동해서 $ pod init 하고 Podfile을 열고 코드 추가 후 
+
+$ pod install 한다.
+
+<br/>
+
+![img1](images/img31.png)
+
+<br/>
+
+Xcode 프로젝트 AppDelegate 파일을 다음과 같이 변경해준다.
 
 
 
-
-
-
-
-
-
+<br/>
 
 
 
@@ -277,3 +367,4 @@ Developerment에서
 
 * [FCM을 사용한 아이폰 푸시 알림 만들기](https://m.blog.naver.com/PostView.nhn?blogId=whdals0&logNo=221117010124&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 
+<br/>
