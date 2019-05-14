@@ -27,25 +27,44 @@
                                     <segment title="apple"/>
                                     <segment title="google"/>
                                 </segments>
+                                <connections>
+                                    <action selector="bookmarkAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ODb-ac-IwR"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LuE-QP-n1f">
                                 <rect key="frame" x="0.0" y="56" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
                             </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-s1-qs7">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="0hv-Yp-iIU"/>
+                                    <barButtonItem systemItem="rewind" id="0hv-Yp-iIU">
+                                        <connections>
+                                            <action selector="backAction:" destination="BYZ-38-t0r" id="Q7s-Iv-Xty"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jen-BC-jz4"/>
-                                    <barButtonItem systemItem="fastForward" id="cDq-sa-evk"/>
+                                    <barButtonItem systemItem="fastForward" id="cDq-sa-evk">
+                                        <connections>
+                                            <action selector="forwardAction:" destination="BYZ-38-t0r" id="VIN-UZ-shg"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Jda-v2-pRF"/>
-                                    <barButtonItem systemItem="stop" id="Xmz-hx-NKY"/>
+                                    <barButtonItem systemItem="stop" id="Xmz-hx-NKY">
+                                        <connections>
+                                            <action selector="stopAction:" destination="BYZ-38-t0r" id="AyI-pl-LJy"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="HgO-Or-4iV"/>
-                                    <barButtonItem systemItem="refresh" id="Ru4-3H-Knk"/>
+                                    <barButtonItem systemItem="refresh" id="Ru4-3H-Knk">
+                                        <connections>
+                                            <action selector="refreshAction:" destination="BYZ-38-t0r" id="ddB-0b-p4G"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OY0-6K-hOb">
@@ -53,11 +72,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4JC-vu-da4">
+                                <rect key="frame" x="156" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.099728157465609119" green="0.73936887711775612" blue="0.99193829298019409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="4JC-vu-da4" id="OqZ-P5-61x"/>
                         <outlet property="bookmarkSegmentedControl" destination="ZU2-cw-aHk" id="jhU-so-5AW"/>
                         <outlet property="mainWebView" destination="OY0-6K-hOb" id="yOh-WN-Hvh"/>
                         <outlet property="textField" destination="LuE-QP-n1f" id="r9s-bS-euo"/>
