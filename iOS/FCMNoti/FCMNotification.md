@@ -548,6 +548,130 @@ extension AppDelegate : MessagingDelegate {
 
 <br/>
 
+다시 firebase로 이동해서 기존에 만들어 두었던 NotiDemo 프로젝트를 클릭해서 들어간다.
+
+<br/>
+
+![img1](images/img34.png)
+
+
+
+<br/>
+
+<br/>
+
+![img1](images/img41.png)
+
+<br/>
+
+NotiDemo를 누르고 
+
+![img1](images/img42.png)
+
+<br/>
+
+여기서 ⚙️ 설정으로 가서 `클라우드 메시징`으로 들어간다. 
+
+<br/>
+
+![img1](images/img43.png)
+
+<br/>
+
+<br/>
+
+![img1](images/img44.png)
+
+<br/>
+
+<br/>
+
+iOS 앱 구성 에서 APN 인증서를 등록해준다 
+
+**개발 APN 인증서가 없습니다** 에 `업로드` 를 누르고  
+
+그 전에 다운 받았던 key 인증서를 로드하고 비밀번호 입력 후 업로드한다.
+
+<br/>
+
+![img1](images/img45.png)
+
+<br/>
+
+<br/>
+
+![img1](images/img35.png)
+
+<br/>
+
+메뉴 목록에서 Cloud Messaging을 선택하고 
+
+<br/>
+
+<br/>
+
+![img1](images/img36.png)
+
+<br/>
+
+Send your first message를 클릭하고 푸시를 보내보자.
+
+<br/>
+
+<br/>
+
+![img1](images/img37.png)
+
+<br/>
+
+알림 제목 텍스트를 입력한 후에 
+
+<br/>
+
+<br/>
+
+![img1](images/img38.png)
+
+<br/>
+
+타겟에서 앱 선택을 누르면 `iOS com.company.NotiDemo(NotiDemo)` 그 전에 만들어둔 앱을 선택한다.
+
+<br/>
+
+<br/>
+
+![img1](images/img39.png)
+
+<br/>
+
+스케줄 예약도 가능하지만 Now로 선택해서 즉시 푸시 알람을 받아봄.
+
+<br/>
+
+<br/>
+
+![img1](images/img46.png)
+
+<br/>
+
+나는 추가 옵션으로 key value도 받아 보도록 입력했다.
+
+이제 `검토` 클릭 후 `게시` 를 누르면 해당 디바이스로 푸시 알림이 오는걸 확인할수 있다. 
+
+<br/>
+
+<br/>
+
+![img1](images/img40.png)
+
+<br/>
+
+그리고 Xcode consol 창에도 키와 값이 잘 들어온다.
+
+<br/>
+
+<br/>
+
 <br/>
 
 ### 참고링크
