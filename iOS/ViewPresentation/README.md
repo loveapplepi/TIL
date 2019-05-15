@@ -69,17 +69,12 @@
 
 <br/>
 
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
 
 
 
+
+### 참고링크 
+
+* [iOS 화면 전환 기법](https://hyunable.github.io/2017/11/18/viewChange/)
+
+* [iOS Swift Tutorial: Create a Circular Transition Animation (Custom UIViewController Transitions)](https://www.youtube.com/watch?v=B9sH_VxPPo4)
