@@ -36,13 +36,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        view.backgroundColor = UIColor.white
+        
+        view.addSubview(loginButton)
+        view.addSubview(registerButton)
+        
+        loginButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        registerButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        registerButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        registerButton.bottomAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 60).isActive = true
+        
         
     }
     
     @objc func onButtonPressed(_ sender: UIButton) {
         if sender == loginButton {
-//            let loginVC = LoginViewController()
-            
+            let loginVC = LoginViewController()
+            self.navigationController?.pushViewController(loginVC, animated: true)
+        } else if sender == registerButton {
+            let registerVC = RegisterViewController()
+            self.navigationController?.pushViewController(registerVC, animated: true)
         }
     }
 
