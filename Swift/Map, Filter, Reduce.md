@@ -73,7 +73,35 @@ print(oddNumbers) //[2, 4, 6, 8, 10]
 
 <br/>
 
-### 
+### reduce
+
+<br/>
+
+모든 값을 하나로 통합해서 반환, 초기값을 넣어줄수 있다.
+
+```
+.reduce(initialResult: Result, nextPartialResult: (Result, Int) throws -> Result)
+```
+
+<br/>
+
+```swift
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let sumNumber = numbers.reduce(0, {$0 + $1})
+print(sumNumber) //55
+
+let subtract = numbers.reduce(5, {$0 - $1})
+print(subtract) //-50
+```
+
+<br/>
+
+<br/>
+
+<br/>
+
+
 
 
 
