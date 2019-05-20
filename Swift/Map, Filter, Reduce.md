@@ -55,9 +55,25 @@ print(numberToString) //["1", "2", "3", "4", "5"]
 
 <br/>
 
+### filter
 
+<br/>
 
+원하는 값들만 걸러서 새로운 배열로 반환
 
+```swift
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let oddNumbers = numbers.filter({ $0 % 2 == 0 })
+
+print(oddNumbers) //[2, 4, 6, 8, 10]
+```
+
+<br/>
+
+<br/>
+
+### 
 
 
 
