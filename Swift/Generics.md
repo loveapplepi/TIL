@@ -108,15 +108,94 @@ print(a) //hi
 print(b) //10
 ```
 
+<br/>
+
+<br/>
+
+하나 이상의 타입 인자를 사용할수 있고 `<T, M>`  꺽쇠 안에서 타입 이름을 콤마로 분리한다.
+
+<br/>
+
+```swift
+func getTwoValues<T, M>(a: T, b: M) {
+    print("\(type(of: a)) typeof \(a)") //Int typeof 10
+    print("\(type(of: b)) typeof \(b)") //String typeof hi
+}
+
+var a = 10
+var b = "hi"
+
+getTwoValues(a: a, b: b)
+```
+
+<br/>
+
+<br/>
+
+ 클래스, 구조체, 열거형으로 자신만의 제네릭 타입을 정의할 수 있다.
+
+Stack 이라는 제네릭 컬렉션 타입을 만드는데 스택은 값의 순서가 있는 배열과 유사하지만
+
+배열은 새로운 요소를 배열 안에 어디든 넣고 제거할 수 있고, 스택은 끝에만 
+
+넣고 제거하는 push() pop() 의미에서 Swift 배열 타입보다 좀 더 엄격하다고 할수 있다.
+
+<br/>
+
+제네릭을 사용하지 않은 예제로 IntStack 구조체는 Int 값만 사용할수 있다.
+
+```swift
+struct IntStack {
+    var items = [Int]()
+    mutating func push(item: Int) {
+        items.append(item)
+    }
+    mutating func pop() -> Int {
+        return items.removeLast()
+    }
+}
+
+```
+
+<br/>
+
+<br/>
+
+제네릭을 사용하면 타입에 좀더 유연하게 대응한다.
+
+```swift
+struct Stack<T> {
+    var items = [T]()
+    mutating func push(item: T) {
+        items.append(item)
+    }
+    mutating func pop() -> T {
+        return items.removeLast()
+    }
+}
+
+var stack = Stack<String>()
+stack.push(item: "a")
+stack.push(item: "b")
+stack.push(item: "c")
+print(stack) //Stack<String>(items: ["a", "b", "c"])
+print(stack.items) //["a", "b", "c"]
+
+let lastItem = stack.pop()
+print(lastItem) //c
+print(stack.items) //["a", "b"]
+```
 
 
 
 
 
+<br/>
 
+<br/>
 
+<br/>
 
 ### 참고링크
 
 [민소네_[Swift]Generics 정리](http://minsone.github.io/mac/ios/swift-generics-summary)
-
