@@ -2,6 +2,10 @@
 
 <br/>
 
+#### 제네릭으로 swap 함수 구현
+
+<br/>
+
 다음은 inout 을 공부할때 봤던 swapTwoInts 예제이다.
 
 이 함수는 Int 값만 사용할수 있는데 다른 타입으로 바꾸고 싶다면 함수를 또 작성해야한다.
@@ -132,7 +136,9 @@ getTwoValues(a: a, b: b)
 
 <br/>
 
- 클래스, 구조체, 열거형으로 자신만의 제네릭 타입을 정의할 수 있다.
+#### 클래스, 구조체, 열거형으로 자신만의 제네릭 타입을 정의하기
+
+<br/>
 
 Stack 이라는 제네릭 컬렉션 타입을 만드는데 스택은 값의 순서가 있는 배열과 유사하지만
 
@@ -186,7 +192,27 @@ print(lastItem) //c
 print(stack.items) //["a", "b"]
 ```
 
+<br/>
 
+<br/>
+
+#### 제네릭 타입 확장
+
+#### <br/>
+
+```swift
+extension Stack {
+    var last: T? {
+        return items.isEmpty ? nil : items[items.count - 1]
+    }
+}
+
+print(stack.last) //Optional("b")
+```
+
+<br/>
+
+<br/>
 
 
 
