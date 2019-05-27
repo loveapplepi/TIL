@@ -214,6 +214,46 @@ print(stack.last) //Optional("b")
 
 <br/>
 
+#### 타입 제약
+
+<br/>
+
+배열에서 문자열 찾는 함수예제 이다. 이 함수는 문자열에만 사용할수 있으며 다른 타입에는 사용할수 없다.
+
+<br/>
+
+```swift
+func findStringIndex(array: [String], valueToFind: String) -> Int? {
+    for (index, value) in enumerate(array) {
+        if value == valueToFind {
+            return index
+        }
+    }
+    return nil
+}
+```
+
+<br/>
+
+<br/>
+
+위 함수를 제네릭으로 변경하면 하려면 Equatable을 사용해서 동등 연산자 비교가 가능하도록 해야 한다.
+
+<br/>
+
+```swift
+func findIndex<T: Equatable>(array: [T], valueToFind: T) -> Int? {
+    for (index, value) in enumerate(array) {
+        if value == valueToFind {
+            return index
+        }
+    }
+    return nil
+}
+```
+
+
+
 
 
 <br/>
