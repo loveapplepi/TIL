@@ -8,18 +8,31 @@
 
 import UIKit
 
+enum Info: String {
+    case allCase = "1) 모든 View 목록 & 탭 이벤트 설정 여부"
+    case tapViewCase = "2) 탭 이벤트가 설정된 View 목록"
+    case coordinateCase = "3) 탭 이벤트 발생시 발생좌표 Logging"
+}
+
 class ViewController: UIViewController {
     
     var views = [UIView]()
-    let viewCount = 20
+    let viewCount = 2000
+    let width = 150
+    let height = 30
+    let xValue = 150
+    let yValue = 200
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeViews()
-        let uniqueTexts = extractWords(fileString: readWordsFromFile())
-        addButtonAndLabel()
-        addEvent()
-        showEventInfoOfAllViews()
+        
+        self.makeViews()
+        self.addButtonAndLabel()
+        self.setText()
+        self.addEvent()
+        self.showEventInfoOfAllViews()
+        self.showIndexOfTapGestureView()
+        
     }
     
     private func makeViews() {
@@ -30,8 +43,17 @@ class ViewController: UIViewController {
         }
     }
     
-    private func addEvent() {
+    private func setText() {
+        for v in views {
+            let label = UILabel(frame: CGRect(x: xValue, y: yValue-100, width: width, height: height))
+            guard let index = views.index(of: v) else { return }
+            label.text = extractWords(fileString: readWordsFromFile())[index]
+            v.addSubview(label)
+        }
         
+    }
+    
+    private func addEvent() {
         let eventNumber = Int(Double(views.count) * 0.3)
         var eventCount = 0
         while eventCount < eventNumber {
@@ -42,11 +64,21 @@ class ViewController: UIViewController {
                 eventCount += 1
             }
         }
-        getIndexOfTapGestureView()
+        let tapGesture = UITapGestureRecognizer(target: self, action: nil)
+        self.views.last!.addGestureRecognizer(tapGesture)
     }
     
-    @objc private func tappedView() {
-        print("tap!!!!!  ")
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print(Info.coordinateCase.rawValue)
+        var point: CGPoint = CGPoint(x: 0, y: 0)
+        guard let lastView = views.last else { return }
+        if let touch = touches.first {
+            point = touch.location(in: lastView)
+            let x = point.x
+            let y = point.y
+            guard let index = views.index(of: lastView) else { return }
+            print("\(checkTypeOfSubview(view: lastView))(Test\(index+1)), 발생좌표 x:\(Int(x)), y:\(Int(y))")
+        }
     }
     
     private func isTapGestureView(_ index: Int) -> Bool {
@@ -59,29 +91,15 @@ class ViewController: UIViewController {
         }
         return false
     }
-
-    private func getIndexOfTapGestureView() {
-        for v in views {
-            if let recognizers = v.gestureRecognizers {
-                for gr in recognizers {
-                    if let tapGusture = gr as? UITapGestureRecognizer {
-                        print("view : index \(views.index(of: v))")
-                    }
-                }
-            }
-        }
-    }
-    
-
     
     private func makeLabel() -> UILabel {
-        let label = UILabel(frame: CGRect(x: 200, y: 200, width: 200, height: 20))
+        let label = UILabel(frame: CGRect(x: xValue, y: yValue, width: width, height: height))
         label.text = "label"
         return label
     }
     
     private func makeButton() -> UIButton {
-        let button = UIButton(frame: CGRect(x: 200, y: 200, width: 200, height: 20))
+        let button = UIButton(frame: CGRect(x: xValue, y: yValue, width: width, height: height))
         button.setTitle("btn", for: .normal)
         return button
     }
@@ -98,22 +116,40 @@ class ViewController: UIViewController {
     }
     
     private func showEventInfoOfAllViews() {
+        print(Info.allCase.rawValue)
         var isTapgestureString: String = ""
         for v in views {
-            if let index = views.index(of: v) {
-                isTapgestureString = isTapGestureView(index) ? "OK" : "NO"
-            
-                let button = v.subviews.filter{$0 is UIButton}
-                let label = v.subviews.filter{$0 is UILabel}
-            
-                if button.first is UIButton {
-                    print("UIButton(Test\(index)) : \(isTapgestureString)")
-                }
-                else if label.first is UILabel {
-                    print("UILabel(Test\(index)) : \(isTapgestureString)")
+            guard let index = views.index(of: v) else { return }
+            isTapgestureString = isTapGestureView(index) ? "OK" : "NO"
+            print("\(checkTypeOfSubview(view: v))(Test\(index + 1)) : \(isTapgestureString)")
+        }
+    }
+    
+    private func showIndexOfTapGestureView() {
+        print(Info.tapViewCase.rawValue)
+        for v in views {
+            guard let index = views.index(of: v) else { return }
+            if let recognizers = v.gestureRecognizers {
+                for gr in recognizers {
+                    if let _ = gr as? UITapGestureRecognizer {
+                        print("\(checkTypeOfSubview(view: v))(Test\(index + 1))")
+                    }
                 }
             }
         }
+    }
+    
+    private func checkTypeOfSubview(view: UIView) -> String {
+        let button = view.subviews.filter{$0 is UIButton}
+        let label = view.subviews.filter{$0 is UILabel}
+        
+        if button.first is UIButton {
+            return "UIButton"
+        }
+        else if label.first is UILabel {
+            return "UILabel"
+        }
+        return ""
     }
     
     private func readWordsFromFile() -> String {
