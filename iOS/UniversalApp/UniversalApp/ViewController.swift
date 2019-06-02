@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let uniqueTexts = extractWords(fileString: readWordsFromFile())
         addButtonAndLabel()
         addEvent()
-        
+        showEventInfoOfAllViews()
     }
     
     private func makeViews() {
@@ -50,7 +50,6 @@ class ViewController: UIViewController {
     }
     
     private func isTapGestureView(_ index: Int) -> Bool {
-        
         if let recognizers = views[index].gestureRecognizers {
             for gr in recognizers {
                 if let _ = gr as? UITapGestureRecognizer {
@@ -58,18 +57,15 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
         return false
     }
 
-    
-    
     private func getIndexOfTapGestureView() {
         for v in views {
             if let recognizers = v.gestureRecognizers {
                 for gr in recognizers {
                     if let tapGusture = gr as? UITapGestureRecognizer {
-                        print("view: index \(views.index(of: v))")
+                        print("view : index \(views.index(of: v))")
                     }
                 }
             }
@@ -91,7 +87,6 @@ class ViewController: UIViewController {
     }
     
     private func addButtonAndLabel() {
-        
         for v in views {
             let randomNumber = arc4random_uniform(2)
             if randomNumber == 0 {
@@ -100,7 +95,25 @@ class ViewController: UIViewController {
                 v.addSubview(makeLabel())
             }
         }
-        
+    }
+    
+    private func showEventInfoOfAllViews() {
+        var isTapgestureString: String = ""
+        for v in views {
+            if let index = views.index(of: v) {
+                isTapgestureString = isTapGestureView(index) ? "OK" : "NO"
+            
+                let button = v.subviews.filter{$0 is UIButton}
+                let label = v.subviews.filter{$0 is UILabel}
+            
+                if button.first is UIButton {
+                    print("UIButton(Test\(index)) : \(isTapgestureString)")
+                }
+                else if label.first is UILabel {
+                    print("UILabel(Test\(index)) : \(isTapgestureString)")
+                }
+            }
+        }
     }
     
     private func readWordsFromFile() -> String {
