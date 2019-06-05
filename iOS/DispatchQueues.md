@@ -20,7 +20,7 @@ GCD는 자동으로 일부 dispatch queues를 제공하지만 특정 용도로 �
 
 * Serial queues(private dispatch queues) : 큐에 추가된 순서대로 한번의 하나의 task를 실행한다. 각 큐는 모든 큐와 관련하여 동시에 작동한다. 즉 각 큐는 한 번에 하나의 task만 실행하지만, 최대 4개의 task가 각 큐에서 동시에 실행될 수 있다.
 * Concurrent queues(global dispatch queues) : 동시에 하나 이상의 task를 실행하지만 task는 큐에 추가된 순서대로 계속 시작된다. 현재 실행중인 task는 고유한 쓰레드에서 실행된다. 특정 시점에 실행되는 정확한 task의 수는 가변적이고 시스템 조건에 따라 다르다. 
-* Main dispatch queue : main 쓰레드에서 task를 실행하는 전역적으로 사용가능한 seal queue이다. 이 큐는 앱의 실행루프와 함께 동작하여 큐에 있는 task의 실행을 실행루프에 연결된 다른 이벤트 소스의 실행과 얽힌다. 
+* Main dispatch queue : main 쓰레드에서 task를 실행하는 전역적으로 사용가능한 serial queue이다. 이 큐는 앱의 실행루프와 함께 동작하여 큐에 있는 task의 실행을 실행루프에 연결된 다른 이벤트 소스의 실행과 얽힌다. 
 
 앱의 동시성을 추가할 때 dispatch queues는 쓰레드에 비해 몇 가지 이점을 제공한다. 
 
@@ -95,4 +95,5 @@ Dispatch sources : dispatch source는 특정 타입 시스템 이벤트에 대�
 ### 참고링크
 
 * [Concurrency Programming Guide - Dispatch Queues_zedd](https://zeddios.tistory.com/513) 
+* [GCD - Dispatch Queue사용법 (1)_zedd](https://zeddios.tistory.com/516)
 
