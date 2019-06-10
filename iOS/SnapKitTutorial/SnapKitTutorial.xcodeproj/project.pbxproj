@@ -7,126 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EE0E66F22AE71D000592390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0E66E22AE71D000592390 /* AppDelegate.swift */; };
-		3EE0E67122AE71D000592390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0E67022AE71D000592390 /* ViewController.swift */; };
-		3EE0E67422AE71D000592390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0E67222AE71D000592390 /* Main.storyboard */; };
-		3EE0E67622AE71D100592390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0E67522AE71D100592390 /* Assets.xcassets */; };
-		3EE0E67922AE71D100592390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0E67722AE71D100592390 /* LaunchScreen.storyboard */; };
-		EF3FDEFE5A855A7F5221A0DD /* Pods_SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709BF03135A9E123C7D40E5B /* Pods_SnapKit.framework */; };
+		3EE0E68D22AE7A1300592390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0E68C22AE7A1300592390 /* AppDelegate.swift */; };
+		3EE0E68F22AE7A1300592390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0E68E22AE7A1300592390 /* ViewController.swift */; };
+		3EE0E69222AE7A1300592390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0E69022AE7A1300592390 /* Main.storyboard */; };
+		3EE0E69422AE7A1300592390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0E69322AE7A1300592390 /* Assets.xcassets */; };
+		3EE0E69722AE7A1300592390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0E69522AE7A1300592390 /* LaunchScreen.storyboard */; };
+		92872D64C8CDBC7B20E2D8D3 /* Pods_SnapKitTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56379A4C7F6EB5472A0B732 /* Pods_SnapKitTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3006B068EB5410F2F5EC03AA /* Pods-SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKit.debug.xcconfig"; path = "Target Support Files/Pods-SnapKit/Pods-SnapKit.debug.xcconfig"; sourceTree = "<group>"; };
-		3EE0E66B22AE71D000592390 /* SnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EE0E66E22AE71D000592390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EE0E67022AE71D000592390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3EE0E67322AE71D000592390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3EE0E67522AE71D100592390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3EE0E67822AE71D100592390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3EE0E67A22AE71D100592390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		709BF03135A9E123C7D40E5B /* Pods_SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0301C2AF4BF335A8E51B8CD /* Pods-SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKit.release.xcconfig"; path = "Target Support Files/Pods-SnapKit/Pods-SnapKit.release.xcconfig"; sourceTree = "<group>"; };
+		3EE0E68922AE7A1300592390 /* SnapKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE0E68C22AE7A1300592390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EE0E68E22AE7A1300592390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EE0E69122AE7A1300592390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EE0E69322AE7A1300592390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE0E69622AE7A1300592390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EE0E69822AE7A1300592390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56379A4C7F6EB5472A0B732 /* Pods_SnapKitTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKitTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFC09052B03B82A99594D5E /* Pods-SnapKitTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitTutorial.debug.xcconfig"; path = "Target Support Files/Pods-SnapKitTutorial/Pods-SnapKitTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA295A7B9548C36BF919A32 /* Pods-SnapKitTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitTutorial.release.xcconfig"; path = "Target Support Files/Pods-SnapKitTutorial/Pods-SnapKitTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EE0E66822AE71D000592390 /* Frameworks */ = {
+		3EE0E68622AE7A1300592390 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF3FDEFE5A855A7F5221A0DD /* Pods_SnapKit.framework in Frameworks */,
+				92872D64C8CDBC7B20E2D8D3 /* Pods_SnapKitTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3EE0E66222AE71D000592390 = {
+		3EE0E68022AE7A1300592390 = {
 			isa = PBXGroup;
 			children = (
-				3EE0E66D22AE71D000592390 /* SnapKit */,
-				3EE0E66C22AE71D000592390 /* Products */,
-				9D631EE684C67595998CD2F4 /* Pods */,
-				570AD41D571AADDCA33B9635 /* Frameworks */,
+				3EE0E68B22AE7A1300592390 /* SnapKitTutorial */,
+				3EE0E68A22AE7A1300592390 /* Products */,
+				4BEA7A8F17EA0B09197F088A /* Pods */,
+				BFFD2E0806A12F323DAC4080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		3EE0E66C22AE71D000592390 /* Products */ = {
+		3EE0E68A22AE7A1300592390 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EE0E66B22AE71D000592390 /* SnapKit.app */,
+				3EE0E68922AE7A1300592390 /* SnapKitTutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3EE0E66D22AE71D000592390 /* SnapKit */ = {
+		3EE0E68B22AE7A1300592390 /* SnapKitTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3EE0E66E22AE71D000592390 /* AppDelegate.swift */,
-				3EE0E67022AE71D000592390 /* ViewController.swift */,
-				3EE0E67222AE71D000592390 /* Main.storyboard */,
-				3EE0E67522AE71D100592390 /* Assets.xcassets */,
-				3EE0E67722AE71D100592390 /* LaunchScreen.storyboard */,
-				3EE0E67A22AE71D100592390 /* Info.plist */,
+				3EE0E68C22AE7A1300592390 /* AppDelegate.swift */,
+				3EE0E68E22AE7A1300592390 /* ViewController.swift */,
+				3EE0E69022AE7A1300592390 /* Main.storyboard */,
+				3EE0E69322AE7A1300592390 /* Assets.xcassets */,
+				3EE0E69522AE7A1300592390 /* LaunchScreen.storyboard */,
+				3EE0E69822AE7A1300592390 /* Info.plist */,
 			);
-			path = SnapKit;
+			path = SnapKitTutorial;
 			sourceTree = "<group>";
 		};
-		570AD41D571AADDCA33B9635 /* Frameworks */ = {
+		4BEA7A8F17EA0B09197F088A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				709BF03135A9E123C7D40E5B /* Pods_SnapKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9D631EE684C67595998CD2F4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3006B068EB5410F2F5EC03AA /* Pods-SnapKit.debug.xcconfig */,
-				E0301C2AF4BF335A8E51B8CD /* Pods-SnapKit.release.xcconfig */,
+				BAFC09052B03B82A99594D5E /* Pods-SnapKitTutorial.debug.xcconfig */,
+				EAA295A7B9548C36BF919A32 /* Pods-SnapKitTutorial.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BFFD2E0806A12F323DAC4080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56379A4C7F6EB5472A0B732 /* Pods_SnapKitTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3EE0E66A22AE71D000592390 /* SnapKit */ = {
+		3EE0E68822AE7A1300592390 /* SnapKitTutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EE0E67D22AE71D100592390 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = 3EE0E69B22AE7A1300592390 /* Build configuration list for PBXNativeTarget "SnapKitTutorial" */;
 			buildPhases = (
-				D040121D10E00E87314D11B8 /* [CP] Check Pods Manifest.lock */,
-				3EE0E66722AE71D000592390 /* Sources */,
-				3EE0E66822AE71D000592390 /* Frameworks */,
-				3EE0E66922AE71D000592390 /* Resources */,
-				5A30F39E958CFDFE3D754E65 /* [CP] Embed Pods Frameworks */,
+				A8550CDEF5AD419B4683B4D4 /* [CP] Check Pods Manifest.lock */,
+				3EE0E68522AE7A1300592390 /* Sources */,
+				3EE0E68622AE7A1300592390 /* Frameworks */,
+				3EE0E68722AE7A1300592390 /* Resources */,
+				3D9D45A1735B4BBE636A1AE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SnapKit;
-			productName = SnapKit;
-			productReference = 3EE0E66B22AE71D000592390 /* SnapKit.app */;
+			name = SnapKitTutorial;
+			productName = SnapKitTutorial;
+			productReference = 3EE0E68922AE7A1300592390 /* SnapKitTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3EE0E66322AE71D000592390 /* Project object */ = {
+		3EE0E68122AE7A1300592390 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = pi;
+				ORGANIZATIONNAME = loveapplepi;
 				TargetAttributes = {
-					3EE0E66A22AE71D000592390 = {
+					3EE0E68822AE7A1300592390 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 3EE0E66622AE71D000592390 /* Build configuration list for PBXProject "SnapKit" */;
+			buildConfigurationList = 3EE0E68422AE7A1300592390 /* Build configuration list for PBXProject "SnapKitTutorial" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,48 +134,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 3EE0E66222AE71D000592390;
-			productRefGroup = 3EE0E66C22AE71D000592390 /* Products */;
+			mainGroup = 3EE0E68022AE7A1300592390;
+			productRefGroup = 3EE0E68A22AE7A1300592390 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3EE0E66A22AE71D000592390 /* SnapKit */,
+				3EE0E68822AE7A1300592390 /* SnapKitTutorial */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3EE0E66922AE71D000592390 /* Resources */ = {
+		3EE0E68722AE7A1300592390 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE0E67922AE71D100592390 /* LaunchScreen.storyboard in Resources */,
-				3EE0E67622AE71D100592390 /* Assets.xcassets in Resources */,
-				3EE0E67422AE71D000592390 /* Main.storyboard in Resources */,
+				3EE0E69722AE7A1300592390 /* LaunchScreen.storyboard in Resources */,
+				3EE0E69422AE7A1300592390 /* Assets.xcassets in Resources */,
+				3EE0E69222AE7A1300592390 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5A30F39E958CFDFE3D754E65 /* [CP] Embed Pods Frameworks */ = {
+		3D9D45A1735B4BBE636A1AE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SnapKit/Pods-SnapKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SnapKitTutorial/Pods-SnapKitTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SnapKit/Pods-SnapKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SnapKitTutorial/Pods-SnapKitTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapKit/Pods-SnapKit-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapKitTutorial/Pods-SnapKitTutorial-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D040121D10E00E87314D11B8 /* [CP] Check Pods Manifest.lock */ = {
+		A8550CDEF5AD419B4683B4D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,7 +190,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SnapKit-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SnapKitTutorial-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -200,30 +200,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3EE0E66722AE71D000592390 /* Sources */ = {
+		3EE0E68522AE7A1300592390 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE0E67122AE71D000592390 /* ViewController.swift in Sources */,
-				3EE0E66F22AE71D000592390 /* AppDelegate.swift in Sources */,
+				3EE0E68F22AE7A1300592390 /* ViewController.swift in Sources */,
+				3EE0E68D22AE7A1300592390 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3EE0E67222AE71D000592390 /* Main.storyboard */ = {
+		3EE0E69022AE7A1300592390 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3EE0E67322AE71D000592390 /* Base */,
+				3EE0E69122AE7A1300592390 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3EE0E67722AE71D100592390 /* LaunchScreen.storyboard */ = {
+		3EE0E69522AE7A1300592390 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3EE0E67822AE71D100592390 /* Base */,
+				3EE0E69622AE7A1300592390 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3EE0E67B22AE71D100592390 /* Debug */ = {
+		3EE0E69922AE7A1300592390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		3EE0E67C22AE71D100592390 /* Release */ = {
+		3EE0E69A22AE7A1300592390 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,38 +347,38 @@
 			};
 			name = Release;
 		};
-		3EE0E67E22AE71D100592390 /* Debug */ = {
+		3EE0E69C22AE7A1300592390 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3006B068EB5410F2F5EC03AA /* Pods-SnapKit.debug.xcconfig */;
+			baseConfigurationReference = BAFC09052B03B82A99594D5E /* Pods-SnapKitTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCXR8CZHCY;
-				INFOPLIST_FILE = SnapKit/Info.plist;
+				INFOPLIST_FILE = SnapKitTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pi.SnapKit;
+				PRODUCT_BUNDLE_IDENTIFIER = loveapplepi.SnapKitTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3EE0E67F22AE71D100592390 /* Release */ = {
+		3EE0E69D22AE7A1300592390 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0301C2AF4BF335A8E51B8CD /* Pods-SnapKit.release.xcconfig */;
+			baseConfigurationReference = EAA295A7B9548C36BF919A32 /* Pods-SnapKitTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCXR8CZHCY;
-				INFOPLIST_FILE = SnapKit/Info.plist;
+				INFOPLIST_FILE = SnapKitTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pi.SnapKit;
+				PRODUCT_BUNDLE_IDENTIFIER = loveapplepi.SnapKitTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,25 +388,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3EE0E66622AE71D000592390 /* Build configuration list for PBXProject "SnapKit" */ = {
+		3EE0E68422AE7A1300592390 /* Build configuration list for PBXProject "SnapKitTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EE0E67B22AE71D100592390 /* Debug */,
-				3EE0E67C22AE71D100592390 /* Release */,
+				3EE0E69922AE7A1300592390 /* Debug */,
+				3EE0E69A22AE7A1300592390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3EE0E67D22AE71D100592390 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		3EE0E69B22AE7A1300592390 /* Build configuration list for PBXNativeTarget "SnapKitTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EE0E67E22AE71D100592390 /* Debug */,
-				3EE0E67F22AE71D100592390 /* Release */,
+				3EE0E69C22AE7A1300592390 /* Debug */,
+				3EE0E69D22AE7A1300592390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3EE0E66322AE71D000592390 /* Project object */;
+	rootObject = 3EE0E68122AE7A1300592390 /* Project object */;
 }

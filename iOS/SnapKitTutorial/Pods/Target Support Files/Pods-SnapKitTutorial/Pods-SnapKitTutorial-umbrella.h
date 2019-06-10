@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SnapKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SnapKitVersionString[];
+FOUNDATION_EXPORT double Pods_SnapKitTutorialVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SnapKitTutorialVersionString[];
 

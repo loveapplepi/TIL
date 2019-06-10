@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SnapKit
+//  SnapKitTutorial
 //
 //  Created by loveapplepi on 10/06/2019.
 //  Copyright © 2019 loveapplepi. All rights reserved.
