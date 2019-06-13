@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let url = URL(string: "https://jsonplaceholder.typicode.com/users")
 
     override func viewDidLoad() {
         super.viewDidLoad()
