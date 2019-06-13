@@ -61,20 +61,5 @@ class TableViewCell: UITableViewCell, FSPagerViewDataSource, FSPagerViewDelegate
         self.pageControl.currentPage = pagerView.currentIndex
     }
     
-    @IBAction func sliderValueChanged(_ sender: UISlider) {
-        switch sender.tag {
-        case 1:
-            let newScale = 0.5+CGFloat(sender.value)*0.5 // [0.5 - 1.0]
-            self.pagerView.itemSize = self.pagerView.frame.size.applying(CGAffineTransform(scaleX: newScale, y: newScale))
-        case 2:
-            self.pagerView.interitemSpacing = CGFloat(sender.value) * 20 // [0 - 20]
-        case 3:
-            self.numberOfItems = Int(roundf(sender.value*7.0))
-            self.pageControl.numberOfPages = self.imageNames.count
-            self.pagerView.reloadData()
-        default:
-            break
-        }
-    }
 
 }
