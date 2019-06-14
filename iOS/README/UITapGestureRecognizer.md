@@ -6,7 +6,7 @@
 let labelTapGesture = UITapGestureRecognizer(target: self, action: #selector(moveToUserPage))
 
 self.userNameLabel.isUserInteractionEnabled = true
-        self.userNameLabel.addGestureRecognizer(labelTapGesture)
+       self.userNameLabel.addGestureRecognizer(labelTapGesture)
 ```
 
 tapGesture 인식기를 생성하고 탭 발생시 실행될 함수를 selector 해준다.
