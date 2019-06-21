@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var swichTest: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        swichTest.isOn = UserDefaults.standard.bool(forKey: "swichState")
     }
 
-
+    @IBAction func onSwich(_ sender: Any) {
+        UserDefaults.standard.set(swichTest.isOn, forKey: "swichState")
+    }
+    
 }
 
