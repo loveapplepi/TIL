@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var activityIndicator = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
     }
 
-
+    @IBAction func touchStartButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchStopButton(_ sender: Any) {
+        activityIndicator.stopAnimating()
+    }
 }
 
