@@ -11,7 +11,7 @@ import Kingfisher
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
    
-    @IBOutlet weak var collectionview: UICollectionView!
+    @IBOutlet weak var imageCollectionview: UICollectionView!
     
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/3, height: collectionView.frame.width/3)
+        return CGSize(width: imageCollectionview.frame.width/6, height: imageCollectionview.frame.width/6)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
