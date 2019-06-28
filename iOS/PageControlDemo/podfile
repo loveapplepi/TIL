@@ -7,5 +7,6 @@ target 'PageControlDemo' do
 
   # Pods for PageControlDemo
     pod 'MaterialComponents/PageControl'
+    pod 'MaterialComponents/Palettes'
 
 end

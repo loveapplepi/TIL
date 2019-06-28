@@ -12,6 +12,8 @@
 
 #import "MaterialPageControl.h"
 #import "MDCPageControl.h"
+#import "MaterialPalettes.h"
+#import "MDCPalettes.h"
 
 FOUNDATION_EXPORT double MaterialComponentsVersionNumber;
 FOUNDATION_EXPORT const unsigned char MaterialComponentsVersionString[];
