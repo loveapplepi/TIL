@@ -6,7 +6,6 @@ target 'MaterialComponentsTabsDemo' do
   use_frameworks!
 
   # Pods for MaterialComponentsTabsDemo
-    pod 'MaterialComponents/PageControl'
-    pod 'MaterialComponents/Palettes'
+  pod 'MaterialComponents/Tabs’
 
 end
