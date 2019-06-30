@@ -61,6 +61,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         pageControl.addTarget(self, action: #selector(didChangePage), for: .valueChanged)
         pageControl.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        
         view.addSubview(pageControl)
     }
     
@@ -93,21 +94,55 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         pageControl.scrollViewDidScroll(scrollView)
     }
     
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        print(scrollView.contentOffset)
+        
+        if scrollView.contentOffset.x < 0
+        {
+            pageControl.setCurrentPage(5, animated: true)
+            scrollView.contentOffset = CGPoint(x: view.bounds.width * 4, y: 0)
+        }
+        
+        if scrollView.contentOffset.x > view.bounds.width * 5
+        {
+            pageControl.setCurrentPage(0, animated: true)
+            scrollView.contentOffset = CGPoint(x: 0, y: 0)
+        }
+        
+       
+        
+    }
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        pageControl.scrollViewDidEndDecelerating(scrollView)
+        //pageControl.scrollViewDidEndDecelerating(scrollView)
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        pageControl.scrollViewDidEndScrollingAnimation(scrollView)
+        //pageControl.scrollViewDidEndScrollingAnimation(scrollView)
+    }
+    
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+        print("scrollViewDidScrollToTop")
     }
     
     // MARK: - User events
     @objc func didChangePage(_ sender: MDCPageControl) {
-        var offset = scrollView.contentOffset
-        offset.x = CGFloat(sender.currentPage) * scrollView.bounds.size.width
-        scrollView.setContentOffset(offset, animated: true)
+  //      print(pageControl.currentPage)
+        
+//        if pageControl.currentPage == 5
+//        {
+//            pageControl.setCurrentPage(0, animated: true)
+//            scrollView.contentOffset = CGPoint(x: 0, y: 0)
+//        }
+        
+
     }
     
+
     // MARK: - CatalogByConvention
     @objc class func catalogMetadata() -> [String: Any] {
         return [

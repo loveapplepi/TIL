@@ -52,7 +52,8 @@ class ViewController: UIViewController {
         tabBar.alignment = .justified
         tabBar.itemAppearance = .titles
         
-        tabBar.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        tabBar.autoresizingMask = [.flexibleBottomMargin, .flexibleHeight]
+//        tabBar.sizeThatFits(CGSize(width: view.bounds.width, height: 100))
 //        tabBar.sizeToFit()
         tabBar.barTintColor = UIColor.red
         view.addSubview(tabBar)
