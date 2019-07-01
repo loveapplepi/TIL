@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
     
         tabBar.items = [
-            UITabBarItem(title: "All\nhi", image: nil, tag: 0),
+            UITabBarItem(title: "All\nhi\nhello\n좀되라", image: nil, tag: 0),
             UITabBarItem(title: "My", image: nil, tag: 1),
             UITabBarItem(title: "Archive", image: nil, tag: 2)
         ]
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         tabBar.selectedItemTintColor = UIColor.yellow
         tabBar.unselectedItemTintColor = UIColor.black
         tabBar.alignment = .justified
-        tabBar.itemAppearance = .titles
+        tabBar.itemAppearance = .titledImages
         
         tabBar.autoresizingMask = [.flexibleBottomMargin, .flexibleHeight]
 //        tabBar.sizeThatFits(CGSize(width: view.bounds.width, height: 100))
