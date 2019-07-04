@@ -1,0 +1,6 @@
+framework module Pods_SwitchButtonTest {
+  umbrella header "Pods-SwitchButtonTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095744A29A607D0DC47B6982 /* Pods_SwitchButtonTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65900CA98C741FA916B52F8 /* Pods_SwitchButtonTest.framework */; };
 		3EE09C7722CDC87C00BB33F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE09C7622CDC87C00BB33F7 /* AppDelegate.swift */; };
 		3EE09C7922CDC87C00BB33F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE09C7822CDC87C00BB33F7 /* ViewController.swift */; };
 		3EE09C7C22CDC87C00BB33F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE09C7A22CDC87C00BB33F7 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		3EE09C7D22CDC87D00BB33F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EE09C8022CDC87D00BB33F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EE09C8222CDC87D00BB33F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96425DBE667A9CE3EC7BA19D /* Pods-SwitchButtonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitchButtonTest.release.xcconfig"; path = "Target Support Files/Pods-SwitchButtonTest/Pods-SwitchButtonTest.release.xcconfig"; sourceTree = "<group>"; };
+		CB6FAC7D2CAF47F8D2E8A498 /* Pods-SwitchButtonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitchButtonTest.debug.xcconfig"; path = "Target Support Files/Pods-SwitchButtonTest/Pods-SwitchButtonTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F65900CA98C741FA916B52F8 /* Pods_SwitchButtonTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwitchButtonTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095744A29A607D0DC47B6982 /* Pods_SwitchButtonTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05FC6C8A8549F99F695ECF2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65900CA98C741FA916B52F8 /* Pods_SwitchButtonTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3EE09C6A22CDC87C00BB33F7 = {
 			isa = PBXGroup;
 			children = (
 				3EE09C7522CDC87C00BB33F7 /* SwitchButtonTest */,
 				3EE09C7422CDC87C00BB33F7 /* Products */,
+				4191B3D4C50607A112DBD6EB /* Pods */,
+				05FC6C8A8549F99F695ECF2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = SwitchButtonTest;
 			sourceTree = "<group>";
 		};
+		4191B3D4C50607A112DBD6EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6FAC7D2CAF47F8D2E8A498 /* Pods-SwitchButtonTest.debug.xcconfig */,
+				96425DBE667A9CE3EC7BA19D /* Pods-SwitchButtonTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EE09C8522CDC87D00BB33F7 /* Build configuration list for PBXNativeTarget "SwitchButtonTest" */;
 			buildPhases = (
+				1F80CA17E9F2B0413778C696 /* [CP] Check Pods Manifest.lock */,
 				3EE09C6F22CDC87C00BB33F7 /* Sources */,
 				3EE09C7022CDC87C00BB33F7 /* Frameworks */,
 				3EE09C7122CDC87C00BB33F7 /* Resources */,
+				151A5E94EA29C4B9139CC83B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		151A5E94EA29C4B9139CC83B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwitchButtonTest/Pods-SwitchButtonTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwitchButtonTest/Pods-SwitchButtonTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwitchButtonTest/Pods-SwitchButtonTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F80CA17E9F2B0413778C696 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwitchButtonTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EE09C6F22CDC87C00BB33F7 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		3EE09C8622CDC87D00BB33F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6FAC7D2CAF47F8D2E8A498 /* Pods-SwitchButtonTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		3EE09C8722CDC87D00BB33F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96425DBE667A9CE3EC7BA19D /* Pods-SwitchButtonTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
