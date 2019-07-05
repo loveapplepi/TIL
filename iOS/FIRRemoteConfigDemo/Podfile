@@ -6,5 +6,6 @@ target 'FIRRemoteConfigDemo' do
   use_frameworks!
 
   # Pods for FIRRemoteConfigDemo
+    pod 'Firebase/Core'
     pod 'Firebase/RemoteConfig'
 end

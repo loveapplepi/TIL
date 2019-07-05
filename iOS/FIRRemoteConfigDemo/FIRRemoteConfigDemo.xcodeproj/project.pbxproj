@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		3E4311E722CF003D00594E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311E522CF003D00594E80 /* Main.storyboard */; };
 		3E4311E922CF003F00594E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311E822CF003F00594E80 /* Assets.xcassets */; };
 		3E4311EC22CF003F00594E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311EA22CF003F00594E80 /* LaunchScreen.storyboard */; };
+		3E4311F422CF1BD700594E80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311F322CF1BD700594E80 /* GoogleService-Info.plist */; };
 		955CA90599E8439A5567DA60 /* Pods_FIRRemoteConfigDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DF1E92C7DC77B0A4A1E198 /* Pods_FIRRemoteConfigDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		3E4311E822CF003F00594E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E4311EB22CF003F00594E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E4311ED22CF003F00594E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4311F322CF1BD700594E80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80F8953DB19EA14F17FD64D4 /* Pods-FIRRemoteConfigDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRRemoteConfigDemo.release.xcconfig"; path = "Target Support Files/Pods-FIRRemoteConfigDemo/Pods-FIRRemoteConfigDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +48,6 @@
 				1893863966F7AC6A83BEA944 /* Pods-FIRRemoteConfigDemo.debug.xcconfig */,
 				80F8953DB19EA14F17FD64D4 /* Pods-FIRRemoteConfigDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +78,7 @@
 				3E4311E822CF003F00594E80 /* Assets.xcassets */,
 				3E4311EA22CF003F00594E80 /* LaunchScreen.storyboard */,
 				3E4311ED22CF003F00594E80 /* Info.plist */,
+				3E4311F322CF1BD700594E80 /* GoogleService-Info.plist */,
 			);
 			path = FIRRemoteConfigDemo;
 			sourceTree = "<group>";
@@ -150,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4311EC22CF003F00594E80 /* LaunchScreen.storyboard in Resources */,
+				3E4311F422CF1BD700594E80 /* GoogleService-Info.plist in Resources */,
 				3E4311E922CF003F00594E80 /* Assets.xcassets in Resources */,
 				3E4311E722CF003D00594E80 /* Main.storyboard in Resources */,
 			);
