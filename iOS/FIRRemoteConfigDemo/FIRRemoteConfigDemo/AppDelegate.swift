@@ -17,7 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        // Override point for customization after application launch.
+        
+        let remoteConfig = RemoteConfig.remoteConfig()
+        
+        remoteConfig.fetch(withExpirationDuration: 0) { (status, error) in
+            if status == .success {
+                print("config fetched")
+//                remoteConfig.activateFetched()
+                remoteConfig.activate(completionHandler: { (error) in
+                      print(remoteConfig["lastVersion"].stringValue)
+                })
+              
+            } else {
+                print("config not fetched")
+                print("error \(error?.localizedDescription)")
+            }
+        }
+        
         return true
     }
 
