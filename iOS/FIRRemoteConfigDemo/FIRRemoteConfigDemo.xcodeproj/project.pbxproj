@@ -12,9 +12,12 @@
 		3E4311E722CF003D00594E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311E522CF003D00594E80 /* Main.storyboard */; };
 		3E4311E922CF003F00594E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311E822CF003F00594E80 /* Assets.xcassets */; };
 		3E4311EC22CF003F00594E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4311EA22CF003F00594E80 /* LaunchScreen.storyboard */; };
+		955CA90599E8439A5567DA60 /* Pods_FIRRemoteConfigDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DF1E92C7DC77B0A4A1E198 /* Pods_FIRRemoteConfigDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1893863966F7AC6A83BEA944 /* Pods-FIRRemoteConfigDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRRemoteConfigDemo.debug.xcconfig"; path = "Target Support Files/Pods-FIRRemoteConfigDemo/Pods-FIRRemoteConfigDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		20DF1E92C7DC77B0A4A1E198 /* Pods_FIRRemoteConfigDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIRRemoteConfigDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4311DE22CF003D00594E80 /* FIRRemoteConfigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIRRemoteConfigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4311E122CF003D00594E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4311E322CF003D00594E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		3E4311E822CF003F00594E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E4311EB22CF003F00594E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E4311ED22CF003F00594E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F8953DB19EA14F17FD64D4 /* Pods-FIRRemoteConfigDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRRemoteConfigDemo.release.xcconfig"; path = "Target Support Files/Pods-FIRRemoteConfigDemo/Pods-FIRRemoteConfigDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955CA90599E8439A5567DA60 /* Pods_FIRRemoteConfigDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AE6639A345EEAB706F2C354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1893863966F7AC6A83BEA944 /* Pods-FIRRemoteConfigDemo.debug.xcconfig */,
+				80F8953DB19EA14F17FD64D4 /* Pods-FIRRemoteConfigDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E4311D522CF003D00594E80 = {
 			isa = PBXGroup;
 			children = (
 				3E4311E022CF003D00594E80 /* FIRRemoteConfigDemo */,
 				3E4311DF22CF003D00594E80 /* Products */,
+				3AE6639A345EEAB706F2C354 /* Pods */,
+				E0D232401D76D3840A36A08E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = FIRRemoteConfigDemo;
 			sourceTree = "<group>";
 		};
+		E0D232401D76D3840A36A08E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20DF1E92C7DC77B0A4A1E198 /* Pods_FIRRemoteConfigDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E4311F022CF003F00594E80 /* Build configuration list for PBXNativeTarget "FIRRemoteConfigDemo" */;
 			buildPhases = (
+				F1A472409181B3D6CAEAAE65 /* [CP] Check Pods Manifest.lock */,
 				3E4311DA22CF003D00594E80 /* Sources */,
 				3E4311DB22CF003D00594E80 /* Frameworks */,
 				3E4311DC22CF003D00594E80 /* Resources */,
+				57A18EAFBF98044540E53E9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57A18EAFBF98044540E53E9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FIRRemoteConfigDemo/Pods-FIRRemoteConfigDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FIRRemoteConfigDemo/Pods-FIRRemoteConfigDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FIRRemoteConfigDemo/Pods-FIRRemoteConfigDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A472409181B3D6CAEAAE65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIRRemoteConfigDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E4311DA22CF003D00594E80 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		3E4311F122CF003F00594E80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1893863966F7AC6A83BEA944 /* Pods-FIRRemoteConfigDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		3E4311F222CF003F00594E80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F8953DB19EA14F17FD64D4 /* Pods-FIRRemoteConfigDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
