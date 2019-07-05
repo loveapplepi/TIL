@@ -12,9 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didReceiveTestNotification(_:)), name: NSNotification.Name("TestNotification"), object: nil)
     }
 
 
+    @objc func didReceiveTestNotification(_ notification: Notification) {
+        guard let testString: String = notification.userInfo?["TestString"] as? String else { return }
+        
+        print("testString :", testString)
+    }
+
+    
 }
 
