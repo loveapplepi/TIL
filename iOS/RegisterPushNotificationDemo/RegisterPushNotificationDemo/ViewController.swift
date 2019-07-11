@@ -12,7 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        checkRegisterNotification()
+    }
+    
+    func checkRegisterNotification() {
+        let isRegisteredForRemoteNotifications = UIApplication.shared.isRegisteredForRemoteNotifications
+        if isRegisteredForRemoteNotifications {
+            // User is registered for notification
+            print(true)
+        } else {
+            // Show alert user is not registered for notification
+            print(false)
+        }
     }
 
 
