@@ -10,6 +10,13 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    
+    private var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.backgroundColor = .white
+       return scrollView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
