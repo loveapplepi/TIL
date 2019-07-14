@@ -71,13 +71,13 @@
 		3E278D6622DA179C0090B7D2 /* ComponentTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3E278D7922DA1AD30090B7D2 /* UIScrollViewExtension.swift */,
 				3E278D6722DA179C0090B7D2 /* AppDelegate.swift */,
 				3E278D6922DA179C0090B7D2 /* ViewController.swift */,
 				3E278D6B22DA179C0090B7D2 /* Main.storyboard */,
 				3E278D6E22DA179E0090B7D2 /* Assets.xcassets */,
 				3E278D7022DA179E0090B7D2 /* LaunchScreen.storyboard */,
 				3E278D7322DA179E0090B7D2 /* Info.plist */,
-				3E278D7922DA1AD30090B7D2 /* UIScrollViewExtension.swift */,
 			);
 			path = ComponentTableViewDemo;
 			sourceTree = "<group>";
