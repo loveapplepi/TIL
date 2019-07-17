@@ -1,0 +1,16 @@
+PODS:
+  - Pageboy (3.2.3)
+
+DEPENDENCIES:
+  - Pageboy (~> 3.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Pageboy
+
+SPEC CHECKSUMS:
+  Pageboy: 347c49b3a7f15aa78ddb6bf5c6c3b113e382fe52
+
+PODFILE CHECKSUM: 7b0ee83c385c0de3a9a72e581286fff7ce17c6e2
+
+COCOAPODS: 1.7.4
