@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		3EA8287722DF184900F1D785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8287522DF184900F1D785 /* Main.storyboard */; };
 		3EA8287922DF184B00F1D785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8287822DF184B00F1D785 /* Assets.xcassets */; };
 		3EA8287C22DF184B00F1D785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8287A22DF184B00F1D785 /* LaunchScreen.storyboard */; };
+		3EA8288822DF1F0500F1D785 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8288722DF1F0500F1D785 /* ChildViewController.swift */; };
 		540B4F458B32AA330150871A /* Pods_PageBoyControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE0316B2A936C83EDEA0D70 /* Pods_PageBoyControllerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		3EA8287822DF184B00F1D785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EA8287B22DF184B00F1D785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EA8287D22DF184B00F1D785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EA8288722DF1F0500F1D785 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		9DB78A07E8FF7F4AA22EE4D7 /* Pods-PageBoyControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageBoyControllerDemo.debug.xcconfig"; path = "Target Support Files/Pods-PageBoyControllerDemo/Pods-PageBoyControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BF276C5CBE37380BD4F5819A /* Pods-PageBoyControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageBoyControllerDemo.release.xcconfig"; path = "Target Support Files/Pods-PageBoyControllerDemo/Pods-PageBoyControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				3EA8287822DF184B00F1D785 /* Assets.xcassets */,
 				3EA8287A22DF184B00F1D785 /* LaunchScreen.storyboard */,
 				3EA8287D22DF184B00F1D785 /* Info.plist */,
+				3EA8288722DF1F0500F1D785 /* ChildViewController.swift */,
 			);
 			path = PageBoyControllerDemo;
 			sourceTree = "<group>";
@@ -85,7 +88,6 @@
 				9DB78A07E8FF7F4AA22EE4D7 /* Pods-PageBoyControllerDemo.debug.xcconfig */,
 				BF276C5CBE37380BD4F5819A /* Pods-PageBoyControllerDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			files = (
 				3EA8287422DF184900F1D785 /* ViewController.swift in Sources */,
 				3EA8287222DF184900F1D785 /* AppDelegate.swift in Sources */,
+				3EA8288822DF1F0500F1D785 /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
